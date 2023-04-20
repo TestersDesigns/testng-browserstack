@@ -20,19 +20,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-# Maven
-- task: Maven@4
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'compile'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'Path'
-    jdkDirectory: 'C:\DEVTOOLS\JAVA\jdk-11.0.16.1\bin'
-    mavenVersionOption: 'Path'
-    mavenDirectory: 'C:\DEVTOOLS\APACHE\MAVEN\apache-maven-3.8.6\bin'
-    mavenSetM2Home: false
-    mavenAuthenticateFeed: false
-    effectivePomSkip: false
-    sonarQubeRunAnalysis: false
-
